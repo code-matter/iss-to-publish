@@ -1,0 +1,35 @@
+// Mixins
+@import "./imports/mixins";
+@import "./imports/variables";
+
+// Components
+@import "./components/map";
+
+// Pages
+@import "./pages/peopleInSpace";
+@import "./pages/homePage";
+
+// Resets
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+div {
+    &.container {
+        background-color: $background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
